@@ -29,4 +29,6 @@ router(app);
 // Static
 app.use("/", express.static("public"));
 // Port
-app.listen(app.get("PORT"));
+app.listen(app.get("PORT"), () => {
+  console.log("listening on port " + app.get("PORT"));
+});
