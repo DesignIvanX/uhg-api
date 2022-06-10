@@ -19,7 +19,7 @@ const OPTIONS = {
 const app = express();
 // Config
 app.set("PORT", process.env.PORT || process.env.DB_PORT);
-conole.log(process.env.PORT);
+console.log(process.env.PORT);
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
